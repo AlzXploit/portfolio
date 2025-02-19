@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlzXploit</title>
+    <link rel="shortcut icon" href="images/favicon.png" style="width: 100%;" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css"> 
+    <link rel="stylesheet" href="style/about.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">AlzXploit</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#" onclick="demo()">Services</a></li>
+            <li><a href="#"onclick="demo()">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <!-- Home section -->
+    <section class="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1 class="animate__animated animate__fadeInTopLeft">Selamat Datang di Website Saya</h1>
+                <p class="animate__animated animate__fadeInLeft">Ini adalah tempat terbaik untuk menemukan informasi dan
+                    layanan saya.</p>
+                <a href="#about" class="btn-home animate__rubberBand animate__animated">Selengkapnya</a>
+            </div>
+            <div class="home-image animate__animated animate__fadeInBottomRight">
+                <img src="images/alzxploit.png" alt="Gambar Home">
+            </div>
+        </div>
+    </section>
+    <!-- Home section -->
+
+    <!-- about section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="title-about" data-aos="fade-down">Halo! Saya AlzXploit </h2>
+            <div class="about-content">
+                <img class="img-about" src="images/alzxploit.png" alt="Foto Saya" data-aos="zoom-in-up">
+                <div class="about-text">
+                    <p data-aos="fade-right">Halo! Saya <strong>Fahreja</strong>, seorang teknisi jaringan dan pengembang web yang berfokus pada keamanan dan optimasi performa website.</p>
+                    <ul  data-aos="zoom-in-up">
+                        <li>Keahlian: Jaringan komputer, troubleshooting, dan desain web.</li>
+                        <li>Pengalaman: Membangun website dengan CSS murni.</li>
+                        <li>Tools: HTML, CSS, JavaScript, Linux Server.</li>
+                    </ul>
+                    <a href="#"  class="btn-about" onclick="demo()">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section -->
+
+
+
+
+
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
