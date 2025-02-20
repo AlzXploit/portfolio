@@ -1,0 +1,225 @@
+#marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  /* background: #27667b; */
+  background-image: url(../images/bg-skils.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 60vh;
+}
+
+.marquee-container {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-skill {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 2rem;
+}
+.marquee-content {
+  display: flex;
+  width: 100%;
+}
+.marquee-content-2 {
+  display: none;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 40px;
+  animation: marquee 20s linear infinite;
+  min-width: max-content;
+}
+.marquee-track-2 {
+  display: flex;
+  gap: 40px;
+  animation: marque2 20s linear infinite;
+  min-width: max-content;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+.marquee-track-2:hover {
+  animation-play-state: paused;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 3px 9px 32px 8px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 3px 9px 32px 8px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 3px 9px 32px 8px rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.55);
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marque2 {
+  0% {
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  100% {
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
+
+
+
+.container-flip {
+  background-color: #F4F8D3;
+  width: 100%;
+  height: 40vh;
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Kolom otomatis */
+  grid-template-rows: repeat(4, auto); /* 4 baris */
+  gap: 10px;
+
+  /* justify-content: center; */
+  /* flex-direction: row; */
+}
+
+.flip-card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-flip {
+  position: absolute;
+  font-size: 1.2rem;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.btn-flip:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.flip-card-front img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.flip-card-front img:hover {
+  filter: blur(2px);
+}
+
+.flip-card-back {
+  background: #007bff;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.dark {
+  font-weight: 600;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+
+@media (max-width: 768px) {
+    #marquee {
+      padding: 1rem;
+      height: 40vh;
+    }
+    .marquee-track-2 {
+      display: none;
+      /* gap: 10px; */
+    }
+    .card {
+      width: 80px;
+      height: 80px;
+    }
+    .marquee-track {
+      gap: 10px;
+    }
+    .container-flip {
+      /* background-color: red; */
+      height: 120vh;
+    }
+  }
