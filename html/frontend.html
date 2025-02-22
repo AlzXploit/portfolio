@@ -19,11 +19,12 @@
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="logo">AlzXploit</div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navMenu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../index.html#about">About</a></li>
-            <li><a href="../index.html#marquee">Skils ▼</a>
-                <div class="dropdown">
+            <li>
+                <a href="#" id="dropdownBtn" class="dropdownBtn">Skills ▼</a>
+                <div class="dropdown" id="dropdown">
                     <a href="#home-frontend">Front End</a>
                     <a href="./desainweb.html">Desain Web</a>
                     <a href="./network.html">Networking</a>
@@ -32,7 +33,7 @@
             </li>
             <li><a href="#" onclick="demo()">Contact</a></li>
         </ul>
-        <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger" id="hamburgerBtn" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
@@ -50,7 +51,9 @@
                 </div>
                 <div class="description-skils">
                     <h2>apa itu Front End Developer?</h2>
-                    <p><strong>Front-End Developer</strong> adalah seorang pengembang web yang bertanggung jawab untuk membangun dan merancang tampilan serta interaksi yang langsung dilihat dan digunakan oleh pengguna di sebuah website atau aplikasi web.</p>
+                    <p><strong>Front-End Developer</strong> adalah seorang pengembang web yang bertanggung jawab untuk
+                        membangun dan merancang tampilan serta interaksi yang langsung dilihat dan digunakan oleh
+                        pengguna di sebuah website atau aplikasi web.</p>
                     <a href="#" class="btn-skils">Lanjutkan</a>
                 </div>
             </div>

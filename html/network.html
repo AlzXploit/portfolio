@@ -19,11 +19,11 @@
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="logo">AlzXploit</div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navMenu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../index.html#about">About</a></li>
-            <li><a href="../index.html#marquee">Skils ▼</a>
-                <div class="dropdown">
+            <li><a href="#" id="dropdownBtn" class="dropdownBtn">Skils ▼</a>
+                <div class="dropdown" id="dropdown">
                     <a href="./frontend.html">Front End</a>
                     <a href="./desainweb.html">Desain Web</a>
                     <a href="#home-networking">Networking</a>
@@ -32,7 +32,7 @@
             </li>
             <li><a href="#" onclick="demo()">Contact</a></li>
         </ul>
-        <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger" id="hamburgerBtn" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
