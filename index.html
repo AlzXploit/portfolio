@@ -20,7 +20,14 @@
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#marquee">Skils</a></li>
+            <li><a href="#marquee">Skils ▼</a>
+                <div class="dropdown">
+                    <a href="html/frontend.html">Front End</a>
+                    <a href="html/desainweb.html">Desain Web</a>
+                    <a href="html/network.html">Networking</a>
+                    <a href="html/hardware.html">Hardeware</a>
+                </div>
+            </li>
             <li><a href="#" onclick="demo()">Contact</a></li>
         </ul>
         <div class="hamburger" onclick="toggleMenu()">
@@ -179,7 +186,7 @@
 
     <div class="container-flip">
         <!-- flipCard(this) -->
-        <div class="flip-card" onclick="demo()">
+        <div class="flip-card" onclick="halamanFrontEnd()">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="images/frontend.jpeg" alt="">
@@ -190,7 +197,7 @@
                 </div>
             </div>
         </div>
-        <div class="flip-card" onclick="demo()">
+        <div class="flip-card" onclick="halamanDesainWeb()">
             <div class="flip-card-inner">
                 <div class="flip-card-front ">
                     <img src="images/desainweb.jpeg " alt="">
@@ -201,7 +208,7 @@
                 </div>
             </div>
         </div>
-        <div class="flip-card" onclick="demo()">
+        <div class="flip-card" onclick="halamanNetwork()">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="images/splicing.jpeg " alt="">
@@ -212,7 +219,7 @@
                 </div>
             </div>
         </div>
-        <div class="flip-card" onclick="demo()">
+        <div class="flip-card" onclick="halamanHardware()">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="images/hardware.jpeg " alt="">

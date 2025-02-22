@@ -5,6 +5,19 @@ function flipCard(card) {
     card.classList.toggle("flipped");
 }
 
+function halamanFrontEnd() {
+    window.location.href = "../html/frontend.html";
+}
+function halamanDesainWeb() {
+    window.location.href = "../html/desainweb.html";
+}
+function halamanNetwork() {
+    window.location.href = "../html/network.html";
+}
+function halamanHardware() {
+    window.location.href = "../html/hardware.html";
+}
+
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault(); // Blokir klik kanan
 });
@@ -16,3 +29,6 @@ document.addEventListener("copy", function (e) {
 document.addEventListener("dragstart", function (e) {
     e.preventDefault(); // Blokir drag gambar
 });
+
+
+
